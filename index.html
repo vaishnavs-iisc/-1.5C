@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetize Sustainability | MSME Green Finance</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.ico">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <img src="assets/img/logo.svg" alt="< 1.5 Degree Celsius" class="nav-logo">
+            <a href="#contact" class="btn-nav">Book Consultation</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="hero-title">TURN SUSTAINABILITY<br>INTO REVENUE.</h1>
+            <p class="hero-subtitle">
+                We help export-oriented MSMEs unlock green finance, generate carbon credits, and stay compliant — using a tech-enabled, end-to-end approach.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="#estimator" class="btn-hero">GET STARTED</a>
+            </div>
+            <p class="trust-line" data-aos="fade-up" data-aos-delay="400">Trusted by manufacturers navigating global compliance and green finance transitions.</p>
+        </div>
+    </header>
+
+    <section id="estimator" class="white-section" style="background: var(--bg-light); border-bottom: 1px solid var(--neutral);">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Calculate Your Potential ROI</h2>
+            <p class="section-subtitle">See a broad estimate of your carbon footprint and the capital you could unlock.</p>
+            
+            <div class="contact-form" style="max-width: 800px; background: var(--white);">
+                <form id="roi-form">
+                    <div class="grid" style="margin-top: 0; gap: 20px;">
+                        <div class="form-group">
+                            <label>Primary Industry</label>
+                            <select id="calc-industry" class="form-input" required>
+                                <option value="" disabled selected>Select your sector...</option>
+                                <option value="1.2">Metals & Heavy Manufacturing</option>
+                                <option value="1.1">Automotive & Components</option>
+                                <option value="1.0">Textiles & Chemicals</option>
+                                <option value="0.8">FMCG & Food Processing</option>
+                                <option value="0.9">Other Export-Oriented MSME</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Annual Revenue Size</label>
+                            <select id="calc-size" class="form-input" required>
+                                <option value="" disabled selected>Select company size...</option>
+                                <option value="800">Under ₹10 Crore</option>
+                                <option value="3500">₹10 - ₹50 Crore</option>
+                                <option value="12000">₹50 - ₹250 Crore</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-submit" onclick="calculateROI()">Estimate Value Unlocked</button>
+                </form>
+
+                <div id="calc-result" style="display: none; margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--neutral); text-align: center;">
+                    <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 5px;">Estimated Baseline Footprint</h3>
+                    <h2 id="res-footprint" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;">0 tCO₂e</h2>
+                    
+                    <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 5px;">Potential Annual Financial Value</h3>
+                    <h2 id="res-savings" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 15px;">₹ 0 Lakhs</h2>
+                    
+                    <p style="font-size: 0.9rem; opacity: 0.8; max-width: 600px; margin: 0 auto;">
+                        *Value estimated via green loan interest subventions, carbon credit generation, and energy efficiency savings. <a href="#contact" style="color: var(--primary); font-weight: bold;">Book a consultation</a> for an accurate Diagnostic Audit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Sustainability is no longer optional.<br><span style="color: var(--secondary);">But for MSMEs, it’s nearly impossible.</span></h2>
+            <div class="grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">Losing export contracts due to missing carbon data</div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">Complex compliance frameworks (CBAM, BRSR, MRV)</div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">No access to green financing due to poor documentation</div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">High consulting costs from large firms & lack of in-house expertise</div>
+            </div>
+            <p class="highlight-text" data-aos="zoom-in">74% want to go green. Less than 10% actually act. <strong>We fix that gap.</strong></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-aos="fade-right">
+            <h2 class="section-title">We Don’t Just Advise. We Deliver Outcomes.</h2>
+            <p class="section-subtitle">We convert sustainability from a cost center into a revenue-generating engine.</p>
+            <div class="grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>1. Compliance</h3>
+                    <p>Carbon audits, DPRs, and regulatory readiness.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>2. Capital</h3>
+                    <p>Unlock green loans, subsidies, and carbon credit revenue.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>3. Continuity</h3>
+                    <p>Digital MRV tools for ongoing tracking and reporting.</p>
+                </div>
+            </div>
+            <p class="highlight-text">End-to-end execution — from audit to actual financial outcomes.</p>
+        </div>
+    </section>
+
+    <section class="white-section">
+        <div class="container">
+            <h2 class="section-title">A Structured, End-to-End Process</h2>
+            <div class="process-list">
+                <div class="process-item" data-aos="fade-up"><strong>1. Diagnostic Audit:</strong> We assess your carbon footprint and compliance gaps.</div>
+                <div class="process-item" data-aos="fade-up" data-aos-delay="100"><strong>2. DPR & Strategy Design:</strong> Detailed roadmap with financial + operational impact.</div>
+                <div class="process-item" data-aos="fade-up" data-aos-delay="200"><strong>3. Finance Enablement:</strong> Access green loans, subsidies, and carbon markets.</div>
+                <div class="process-item" data-aos="fade-up" data-aos-delay="300"><strong>4. Implementation Support:</strong> Execute sustainability interventions.</div>
+                <div class="process-item" data-aos="fade-up" data-aos-delay="400"><strong>5. Digital MRV Tracking:</strong> Real-time monitoring, reporting, and compliance.</div>
+            </div>
+            <p class="highlight-text">From paperwork to profit — we stay with you at every step.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">Built for MSMEs. Not Enterprises.</h2>
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr><th>Feature</th><th>Others</th><th>Us</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Fees</td><td>High upfront fees</td><td><strong>Success-based pricing</strong></td></tr>
+                        <tr><td>Focus</td><td>Strategy only</td><td><strong>Execution + outcomes</strong></td></tr>
+                        <tr><td>Approach</td><td>Manual processes</td><td><strong>Tech-enabled MRV</strong></td></tr>
+                        <tr><td>Design</td><td>Generic solutions</td><td><strong>Industry-specific interventions</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-section">
+        <div class="container split-grid">
+            <div data-aos="fade-right">
+                <h2 class="section-title" style="text-align: left;">High-Impact Sectors</h2>
+                <ul class="bullet-list">
+                    <li>Metals & Manufacturing</li>
+                    <li>Automotive & Components</li>
+                    <li>Textiles & Chemicals</li>
+                    <li>FMCG & Food Processing</li>
+                    <li>Export-Oriented MSMEs</li>
+                </ul>
+                <p style="opacity: 0.8; margin-top: 15px;">Built for industries facing the highest regulatory pressure.</p>
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="section-title" style="text-align: left;">A Model That Aligns With You</h2>
+                <ul class="bullet-list">
+                    <li><strong>No heavy upfront consulting fees</strong></li>
+                    <li>We earn through a % of financing secured</li>
+                    <li>We earn through a % of carbon credits generated</li>
+                    <li>Optional subscription for monitoring tools</li>
+                </ul>
+                <p class="highlight-text" style="text-align: left; margin-top: 20px;">We only win when you do.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: var(--secondary); color: var(--white);">
+        <div class="container" style="text-align: center;">
+            <div data-aos="zoom-in">
+                <h2 style="color: var(--white); text-align: center;">Start Your Sustainability Journey — Profitably</h2>
+                <p style="max-width: 600px; margin: 0 auto 30px;">Whether you're preparing for compliance or looking to unlock funding, we’ll guide you end-to-end.</p>
+            </div>
+
+            <div class="contact-form" data-aos="fade-up">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="28a7493b-9ae8-4199-94b5-cfdd2e8affd2">
+                    
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" name="company" class="form-input" placeholder="Example Manufacturing Ltd." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" name="email" class="form-input" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How can we help?</label>
+                        <textarea name="message" rows="4" class="form-input" placeholder="Briefly describe your compliance or financing needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Submit Consultation Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--primary); color: var(--white); padding: 80px 0;">
+        <div class="container footer-container">
+            <div style="margin-bottom: 20px;">
+                <img src="assets/img/logo.svg" alt="Logo" height="50" style="filter: brightness(0) invert(1);">
+                <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 15px;">© 2026 Rights Reserved</p>
+            </div>
+            <div>
+                <h4 style="color: var(--white); margin-top: 0;">Contact</h4>
+                <p style="font-size: 1rem;"><a href="mailto:vaishnavs@iisc.ac.in" style="color: var(--white); text-decoration: none;">vaishnavs@iisc.ac.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50 // Trigger slightly earlier on mobile
+        });
+
+        function calculateROI() {
+            const industryVal = document.getElementById('calc-industry').value;
+            const sizeVal = document.getElementById('calc-size').value;
+
+            if (!industryVal || !sizeVal) {
+                alert("Please select both your industry and revenue size.");
+                return;
+            }
+
+            const multiplier = parseFloat(industryVal);
+            const baseFootprint = parseInt(sizeVal);
+            const footprint = Math.round(baseFootprint * multiplier);
+            const totalValueRupees = footprint * 3500;
+            const valueLakhs = (totalValueRupees / 100000).toFixed(1);
+
+            document.getElementById('res-footprint').innerText = footprint.toLocaleString() + ' tCO₂e';
+            document.getElementById('res-savings').innerText = '₹ ' + valueLakhs + ' Lakhs';
+
+            const resultDiv = document.getElementById('calc-result');
+            resultDiv.style.display = 'block';
+            resultDiv.style.animation = 'none';
+            resultDiv.offsetHeight; 
+            resultDiv.style.animation = 'fadeInUp 0.6s ease forwards';
+        }
+    </script>
+</body>
+</html>
